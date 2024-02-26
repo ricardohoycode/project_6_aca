@@ -1,0 +1,42 @@
+[
+  {
+      id:1,
+      name:'zapatilla modelo 1',
+      categoryId:1
+  },
+   {
+      id:2,
+      name:'zapatilla modelo 2',
+       categoryId:1
+  },
+   {
+      id:2,
+      name:'zapatilla modelo 2',
+       categoryId:3
+  },
+   {
+
+  },
+   {
+
+  },
+   {
+
+  },
+   {
+
+  },
+   {
+
+  },
+   {
+
+  },
+   {
+
+  },
+   {
+
+  },
+
+]
