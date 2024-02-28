@@ -12,8 +12,8 @@ let categoryId
 
 beforeAll(async () => {
   const user = {
-    email: "fernando@gmail.com",
-    password: 'fernando1234'
+    email: "rimaylu@gmail.com",
+    password: 'rimaylu1234'
   }
 
   const res = await request(app)
