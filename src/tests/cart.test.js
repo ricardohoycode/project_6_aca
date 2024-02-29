@@ -2,6 +2,8 @@ require('../models')
 const request = require("supertest")
 const app = require("../app")
 const Product = require("../models/Product")
+// const Cart = require('../models/Cart')s
+
 const URL_USER = '/users/login'
 const URL_BASE = '/cart'
 let TOKEN
@@ -9,6 +11,7 @@ let bodyCart
 let bodyProduct
 let product
 let userId
+let cartId
 beforeAll(async () => {
   const user = {
     email: "rimaylu@gmail.com",

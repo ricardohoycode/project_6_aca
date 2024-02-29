@@ -17,8 +17,8 @@ beforeAll(async () => {
 
   //LOGIN
   const user = {
-    email: "fernando@gmail.com",
-    password: 'fernando1234'
+    email: "rimaylu@gmail.com",
+    password: 'rimaylu1234'
   }
   const res = await request(app)
     .post(URL_BASE_USER)
@@ -57,7 +57,7 @@ test("GET -> 'URL_BASE', should return status code 200, res.body to be defined a
   const res = await request(app)
     .get(URL_BASE)
 
-  console.log(res.body)
+ 
   expect(res.status).toBe(200)
   expect(res.body).toBeDefined()
   expect(res.body).toHaveLength(1)

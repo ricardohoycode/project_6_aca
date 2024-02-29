@@ -6,17 +6,17 @@ let TOKEN
 let userId
 
 const user = {
-  firstName: 'Rene',
-  lastName: 'Rivera',
-  email: 'rene@gmail.com',
-  password: 'rene1234',
+  firstName: 'Ricardo',
+  lastName: 'Hoyos',
+  email: 'renerimaylu@gmail.com',
+  password: 'renerimaylu1234',
   phone: '+231321'
 }
 
 beforeAll(async () => {
   const user = {
-    email: "fernando@gmail.com",
-    password: 'fernando1234'
+    email: "rimaylu@gmail.com",
+    password: 'rimaylu1234'
   }
 
   const res = await request(app)
@@ -57,7 +57,7 @@ test("PUT -> 'URL_BASE/:id', should return status code 200, res.body to be defin
 
   const res = await request(app)
     .put(`${URL_BASE}/${userId}`)
-    .send({ firstName: "Frednerys" })
+    .send({ firstName: "Ricardo" })
     .set("Authorization", `Bearer ${TOKEN}`)
 
   expect(res.status).toBe(200)
@@ -68,8 +68,8 @@ test("PUT -> 'URL_BASE/:id', should return status code 200, res.body to be defin
 
 test("POST -> 'URL_BASE/login', should return status code 200, res.body to be defined, res.body.user.email === user.email, and res.body.token to be defined", async () => {
   const userLogin = {
-    email: 'rene@gmail.com',
-    password: 'rene1234'
+    email: 'ricardo@gmail.com',
+    password: 'ricardo1234'
   }
 
   const res = await request(app)
@@ -84,7 +84,7 @@ test("POST -> 'URL_BASE/login', should return status code 200, res.body to be de
 
 test("POST -> 'URL_BASE/login', should return status code 401", async () => {
   const userLogin = {
-    email: 'rene@gmail.com',
+    email: 'ricardo@gmail.com',
     password: 'invalid password'
   }
 
