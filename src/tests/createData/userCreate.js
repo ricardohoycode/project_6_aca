@@ -4,10 +4,10 @@ const userCreate = async () => {
 
   await User.create(
     {
-      firstName: 'Ricardo',
-      lastName: "Hoyos",
-      email: "rimaylu@gmail.com",
-      password: 'rimaylu1234',
+      firstName: 'Fernando',
+      lastName: "de Jesus",
+      email: "fernando@gmail.com",
+      password: 'fernando1234',
       phone: '+123456789'
     }
   )
